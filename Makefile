@@ -10,6 +10,7 @@ build:
 	pip install .
 test:
 	pytest --cov=rich --html=report.html -vv tests/
+	coveralls
 typecheck:
 	mypy -p rich --ignore-missing-imports --warn-unreachable
 typecheck-report:
