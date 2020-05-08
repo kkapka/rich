@@ -1,6 +1,7 @@
 build:
 	python3 -m pip install --upgrade pip
 	pip install wheel
+	pip install poetry
 	pip install -r requirements/requirements.txt
 	pip install -r requirements/test_requirements.txt
 	pip install -r requirements/typecheck_requirements.txt
