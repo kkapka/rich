@@ -1,5 +1,6 @@
 build:
 	python3 -m pip install --upgrade pip
+	pip install wheel
 	pip install -r requirements/requirements.txt
 	pip install -r requirements/test_requirements.txt
 	pip install -r requirements/typecheck_requirements.txt
@@ -7,7 +8,7 @@ build:
 	poetry install
 	pip install .
 test:
-	pytest --cov=rich -vv
+	pytest --cov=rich tests/
 typecheck:
 	mypy -p rich --ignore-missing-imports --warn-unreachable
 typecheck-report:
