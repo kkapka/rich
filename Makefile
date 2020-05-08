@@ -7,7 +7,7 @@ build:
 	poetry install
 	pip install .
 test:
-	pytest --cov=. -vv
+	pytest --cov=rich -vv
 typecheck:
 	mypy -p rich --ignore-missing-imports --warn-unreachable
 typecheck-report:
