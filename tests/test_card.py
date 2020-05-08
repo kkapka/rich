@@ -7,7 +7,6 @@ try:
 except ImportError:
     expected = None
 
-
 def test_card_render():
     card = make_test_card()
     result = render(card)
